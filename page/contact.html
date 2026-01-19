@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Contact</title>
+  <title>Contact - Léo Lienhard</title>
   <link rel="stylesheet" href="../ressource/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="../ressource/script.js" defer></script>
 </head>
 
@@ -13,31 +14,47 @@
       <a href="../index.html">Profil</a>
       <a href="projet.html">Projects</a>
       <a href="contact.html" class="active">Contact</a>
+      
+      <div class="language-selector">
+        <span class="lang-label">FR</span>
+        <label class="switch">
+          <input type="checkbox" id="lang-switch">
+          <span class="slider"></span>
+        </label>
+        <span class="lang-label">EN</span>
+      </div>
     </nav>
   </header>
 
   <main class="container">
     <h1 class="glitch">Contact</h1>
 
-    <form id="contact-form" method="post">
+    <form id="contact-form">
       <ul>
         <li>
-          <label for="name"><span class="lang-fr">Prénom :</span><span class="lang-en">First Name:</span></label>
-          <input type="text" id="name" name="user_name" placeholder="Your name" required />
+          <label for="name">
+            <span class="lang-fr">Prénom :</span>
+            <span class="lang-en">First Name:</span>
+          </label>
+          <input type="text" id="name" name="from_name" placeholder="Name" required />
         </li>
         <li>
-          <label for="mail">E-mail&nbsp;:</label>
-          <input type="email" id="mail" name="user_mail" placeholder="example@mail.com" required />
+          <label for="mail">E-mail :</label>
+          <input type="email" id="mail" name="reply_to" placeholder="example@mail.com" required />
         </li>
         <li>
-          <label for="msg">Message&nbsp;:</label>
-          <textarea id="msg" name="user_message" placeholder="Your message..." required></textarea>
+          <label for="msg">Message :</label>
+          <textarea id="msg" name="message" placeholder="..." required></textarea>
         </li>
-        <li class="button">
-          <button type="submit"><span class="lang-fr">Envoyer</span><span class="lang-en">Send</span></button>
+        <li class="button-row">
+          <button type="submit" id="submit-btn">
+            <span class="lang-fr">Envoyer</span>
+            <span class="lang-en">Send</span>
+          </button>
         </li>
       </ul>
     </form>
+
     <footer class="footer-note">
       <p>© 2025 - Léo Lienhard</p>
     </footer>
