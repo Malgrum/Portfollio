@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -13,64 +13,58 @@
       <a href="../index.html">Profil</a>
       <a href="projet.html" class="active">Projects</a>
       <a href="contact.html">Contact</a>
+      <div class="language-selector">
+  <span class="lang-label">FR</span>
+  <label class="switch">
+    <input type="checkbox" id="lang-switch">
+    <span class="slider"></span>
+  </label>
+  <span class="lang-label">EN</span>
+</div>
     </nav>
   </header>
 
-  <main class="marge container">
-    <h1>My Projects</h1>
-    <p>
-      Over my years of programming and a mind always buzzing with ideas, I have completed many projects. The most notable ones are listed below:
-    </p><br><br>
-
+  <main class="container">
+    <h1><span class="lang-fr">Mes Projets</span><span class="lang-en">My Projects</span></h1>
+    
     <section>
+      <h3 data-text="Project: GKT">Project: GKT</h3>
+      <p class="lang-fr">
+        Ce projet est l'un des premiers que j'ai fais
+        Un amis qui tient une boutique où se dérouler toute sorte de tournoi (Pokémon, Warhammer, etc ...) a perdu son bot discord pour les inscriptions
+        J'ai eu 24h pour en faire un ayant aucune connaissance des bots <br>
+        Il est toujours utilisé actuellement et continu d'avoir des mise à jour assez régulière.<br>
+        Durée: 24h
+      </p>
+      <p class="lang-en">
+        Created a Discord registration bot for a tournament shop in 24h. Still in use and regularly updated.
+      </p>
+    </section>
+
+       <section>
       <h3 data-text="Project: Anubis">Project: Anubis</h3>
-      <p>
+      <p class="lang-en">
         This project was requested by a friend attending a competing school. Her team had almost abandoned her, so I helped from A to Z.<br>
         The goal was to create an ARG as a website (HTML, CSS, JavaScript) with an accompanying video.<br>
         The code is available on my GitHub (link in the Profile).<br>
         Duration: 2 weeks
       </p>
-    </section>
-
-    <section>
-      <h3 data-text="Project: Pravda">Project: Pravda</h3>
-      <p>
-        Pravda is the name of my web server hosted on a Raspberry Pi 5.<br>
-        I currently use it to host multiple completed projects and store data for associations and other purposes.<br>
-        Duration: 1 week
-      </p>
-    </section>
+    </section> 
 
     <section>
       <h3 data-text="Project: Ministorium">Project: Ministorium</h3>
-      <p>
+      <p class="lang-en">
         As the lead programmer of the Warhammer club (<em>Warhagine</em>), I was asked to code a website to archive played games and compile the rules of different game modes, with the ability to edit articles.<br>
         Duration: 3 weeks
       </p>
     </section>
 
     <section>
-      <h3 data-text="Project: Division">Project: Division</h3>
-      <p>
-        One of the projects closest to my heart as it is linked to the biggest coding project of my life.<br>
-        Division is a connected watch where SSH and other coding options would be available.<br>
-        I created it because the only watches that natively support this are from Google and Apple, and as a student, I do not have the funds to buy them.<br>
-        Duration: 2 months (not yet finished)
-      </p>
-    </section>
-
-    <section>
-      <h3 data-text="Project: Vision">Project: Vision</h3>
-      <p>
-        This project is still at the prototype stage.<br>
-        Similar to the Division project, but this time as smart glasses — because the <em>Even G11</em> and <em>Meta Ray-Ban</em> are too expensive.<br>
-        Duration: Not started yet
-      </p>
-    </section>
-
-    <section>
       <h3 data-text="Project: Katyusha">Project: Katyusha</h3>
-      <p>
+      <p class="lang-fr">
+        IA vocale développée en Python (Reconnaissance vocale, domotique, type ChatGPT). En développement depuis 4 ans.
+      </p>
+      <p class="lang-en">
         The project that took me the most time: a voice AI developed in Python.<br>
         It can connect to all my devices, perform voice recognition, and function somewhat like ChatGPT.<br>
         Duration: 4 years (still in development)
@@ -78,12 +72,19 @@
     </section>
 
     <section>
-      <h3 data-text="Project: ClapTrap">Project: ClapTrap</h3>
-      <p>
-        This project is also in the prototype phase. The goal is to integrate Katyusha into a functional robot (inspired by <em>Lego Mindstorms</em>).<br>
-        Duration: Not started yet
+      <h3 data-text="Project: GKS">Project: GKS</h3>
+      <p class="lang-fr">
+        Le projet est aussi une demande de la même personne que le GKT<br>
+        Il m'a demander cette fois, de lui faire un logiciel d'inventaire relié au caisse de ces magasin et à son site
+      </p>
+      <p class="lang-en">
+        Inventory management software linked to physical store registers and the client's website.
       </p>
     </section>
+
+    <footer class="footer-note">
+      <p>© 2025 - Léo Lienhard</p>
+    </footer>
   </main>
 </body>
 </html>
